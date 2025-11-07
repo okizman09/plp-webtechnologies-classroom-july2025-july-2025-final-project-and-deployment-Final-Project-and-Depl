@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover new music on TuneVibes">
+    <title>Discover - TuneVibes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/css/style.css">
+    <link rel="stylesheet" href="plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/css/animations.css">
+    <link rel="stylesheet" href="plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/css/responsive.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">TuneVibes</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="playlists.html">My Vibes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Your Music Universe</h1>
+        <p>Explore curated tracks across all moods and genres</p>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="discover-controls">
+        <input type="text" id="searchInput" placeholder="Search songs, artists..." class="search-bar">
+        <select id="filterMood" class="filter-select">
+            <option value="all">All Moods</option>
+            <option value="chill">Chill</option>
+            <option value="energetic">Energetic</option>
+            <option value="heartbreak">Heartbreak</option>
+            <option value="focus">Focus</option>
+            <option value="party">Party</option>
+            <option value="dreamy">Dreamy</option>
+        </select>
+    </section>
+
+    <!-- Music Grid -->
+    <section class="discover-section">
+        <div class="music-grid" id="musicGrid">
+            <!-- Songs will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TuneVibes. All rights reserved.</p>
+        <p>Crafted with 💜 by Okiki</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load all songs on discover page
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDiscoverPage();
+        });
+    </script>
+</body>
+</html>

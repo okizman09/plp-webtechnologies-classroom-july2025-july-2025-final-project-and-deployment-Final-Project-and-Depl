@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TuneVibes - Discover music that matches your emotion">
+    <title>TuneVibes - Feel the Vibe</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/css/style.css">
+    <link rel="stylesheet" href="plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/css/animations.css">
+    <link rel="stylesheet" href="plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/css/responsive.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">TuneVibes</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="playlists.html">My Vibes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Feel the Vibe</h1>
+        <p>Discover music that matches your emotion. Every mood has its soundtrack.</p>
+    </section>
+
+    <!-- Mood Selection Section -->
+    <section class="mood-section">
+        <h2>Discover by Mood</h2>
+        <div class="mood-grid" id="moodGrid">
+            <div class="mood-card chill" data-mood="chill">
+                <span class="mood-icon">🌊</span>
+                <h3>Chill</h3>
+                <p>Relax and unwind with smooth vibes</p>
+            </div>
+            <div class="mood-card energetic" data-mood="energetic">
+                <span class="mood-icon">⚡</span>
+                <h3>Energetic</h3>
+                <p>Pump up the energy and move</p>
+            </div>
+            <div class="mood-card heartbreak" data-mood="heartbreak">
+                <span class="mood-icon">💔</span>
+                <h3>Heartbreak</h3>
+                <p>Feel the emotion, heal with sound</p>
+            </div>
+            <div class="mood-card focus" data-mood="focus">
+                <span class="mood-icon">🎯</span>
+                <h3>Focus</h3>
+                <p>Get in the zone and concentrate</p>
+            </div>
+            <div class="mood-card party" data-mood="party">
+                <span class="mood-icon">🎉</span>
+                <h3>Party</h3>
+                <p>Turn up and celebrate life</p>
+            </div>
+            <div class="mood-card dreamy" data-mood="dreamy">
+                <span class="mood-icon">✨</span>
+                <h3>Dreamy</h3>
+                <p>Float away on ethereal sounds</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Playlist Preview -->
+        <div class="playlist-preview" id="playlistPreview">
+            <h3 id="moodTitle">Select a mood to see songs</h3>
+            <div class="song-list" id="songList"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TuneVibes. All rights reserved.</p>
+        <p>Crafted with 💜 by Okiki</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
